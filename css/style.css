@@ -1,3 +1,8 @@
+*, *::after, *::before {
+
+    box-sizing: border-box;
+}
+
 :root {
     --main-color: #212121;
     --secondary-color: #757575;
@@ -117,7 +122,7 @@ button {
 .hero {
     background-color: #2F303A;
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -144,9 +149,15 @@ button {
     align-items: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+    margin: auto;
 }
 
 /* ----------------------------------------ABOUT---------------------------------- */
+
+.about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .hidden-about-title {
     visibility: hidden;
@@ -172,16 +183,27 @@ button {
 
 /* -------------------------------------ABOUT-MORE------------------------------ */
 
+.about-more {
+    padding-bottom: 94px;
+}
 .united-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-bottom: 50px;
+}
+
+.ubout-img {
+
 }
 
 /* ---------------------------------------MASTERS--------------------------------------------- */
 
+.masters{
+    padding-top: 94px;
+}
 
 .masters-list {
     font-weight: 500;
@@ -265,4 +287,5 @@ button {
 button.current {
     background-color : var(--brend-color);
     color: var(--light-color);
+
 }
