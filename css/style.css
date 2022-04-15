@@ -69,7 +69,7 @@ button {
     width: 1170px;
     margin-left: 15px;
     margin-right: 15px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 
@@ -78,7 +78,16 @@ button {
     padding-top: 24px;
     padding-bottom: 25px;    
     border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header-flex {
+    display: flex;
 }
 
 .logo {
@@ -89,11 +98,20 @@ button {
     letter-spacing: 0.03em;
     color: var(--brend-color);
     text-decoration-line: none;
-
+    margin-right: 93px;
 }
 
 .logo-style {
     color: var(--main-color);    
+}
+
+.header-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .menu-link {
@@ -104,14 +122,17 @@ button {
     text-decoration-line: none;
 }
 
-
-.contacts-link {
+.contacts-item .contacts-link {
     font-weight: 500;    
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration-line: none;
     font-style: normal;
     color: var(--secondary-color);     
+}
+
+.contacts-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .current {
@@ -123,6 +144,7 @@ button {
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
+    /* margin-bottom: 94px; */
 }
 
 .hero-title {
@@ -133,7 +155,7 @@ button {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--light-color);
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -166,13 +188,23 @@ button {
     margin-bottom: -1px;
 }
 
+.about-list {
+    display: flex;
+}
+
+.about-list-margin:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+
 .about-list-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    
+    margin-bottom: 10px;
 }
 
 .about-list-item {    
@@ -195,14 +227,44 @@ button {
     padding-bottom: 50px;
 }
 
-.ubout-img {
+.about-more-list {
+    display: flex;    
+    margin-left: -30px;
+}
 
+.ubout-img {
+    flex-basis: calc(100%/3-30px);
+    margin-left: 30px;
 }
 
 /* ---------------------------------------MASTERS--------------------------------------------- */
 
-.masters{
-    padding-top: 94px;
+.masters {
+    background-color: #F5F4FA;
+    padding-top: 92px;
+    padding-bottom: 94px;
+}
+
+.masters-title {
+    
+}
+
+.masters-container {
+    display: flex;
+    margin-left: -30px;
+    
+}
+
+.masters-photo {
+    flex-basis:calc(100%/2-30px);
+    margin-left: 30px;  
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;  
+}
+
+.masters-photo {
+
 }
 
 .masters-list {
@@ -211,7 +273,8 @@ button {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .proffesion {
@@ -220,10 +283,14 @@ button {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-color) ;
+    margin-bottom: 30px;
+
 }
 /* ----------------------------------------FOOTER---------------------------------------- */
 .footer-section {
     background: #2F303A;
+    padding-top: 58px;
+    padding-bottom: 62px;
 }
 
 .footer-logo-style {
@@ -240,9 +307,18 @@ button {
     opacity: 60%;
 }
 
+.footer-list {
+    margin-top: 20px;
+}
+
+.footer-list :not(:last-child) {
+    padding-bottom: 9px;
+}
+
 .contacts-addres {
     color: var(--light-color);
     opacity: 100%;
+    
 }
 
 
