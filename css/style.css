@@ -1,8 +1,3 @@
-*, *::after, *::before {
-
-    box-sizing: border-box;
-}
-
 :root {
     --main-color: #212121;
     --secondary-color: #757575;
@@ -10,41 +5,21 @@
     --backgrd-color: #F5F4FA;
     --light-color: #FFFFFF;
     --brand-bg-color: #188CE8;
-
+    --padding-94:  94px;
 }
 
 body {
     font-family: "Roboto", tahoma, sans-serif;
     color: var(--main-color);
     font-size: 14px;
-
 }
-
-p,
-h1,
-h2,
-h3 {
-    margin: 0;
-}
-
-ul {
-    margin: 0;
-    padding-left: 0;
-}
-
-button {
-    cursor: pointer;
-}
+p, h1, h2, h3 {margin: 0;}
+ul {margin: 0;padding-left: 0;}
+button {cursor: pointer;}
+img {display: block;}
 
 .lists {
     list-style: none;
-}
-
-.menu-link:hover,
-.contacts-link:hover,
-.menu-link:focus,
-.contacts-link:focus {
-    color: var(--brend-color);
 }
 
 .hero-btn:hover,
@@ -67,9 +42,10 @@ button {
 
 .container {
     width: 1170px;
-    margin-left: 15px;
-    margin-right: 15px;
-    /* border: 1px solid red; */
+    pading-left: 15px;
+    pading-right: 15px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
 
 }
 
@@ -77,8 +53,8 @@ button {
 .header {
     padding-top: 24px;
     padding-bottom: 25px;    
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+    border-bottom: 1px solid #ECECEC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
 }
 
 .header .container {
@@ -128,11 +104,20 @@ button {
     letter-spacing: 0.02em;
     text-decoration-line: none;
     font-style: normal;
-    color: var(--secondary-color);     
+    color: var(--secondary-color);
+    padding-top: 7px;
+    padding-bottom: 7px;     
 }
 
 .contacts-item:not(:last-child) {
     margin-right: 50px;
+}
+
+.menu-link:hover,
+.contacts-link:hover,
+.menu-link:focus,
+.contacts-link:focus {
+    color: var(--brend-color);
 }
 
 .current {
@@ -148,6 +133,7 @@ button {
 }
 
 .hero-title {
+    max-width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;    
@@ -155,7 +141,7 @@ button {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--light-color);
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
 }
 
 .hero-btn {
@@ -177,8 +163,8 @@ button {
 /* ----------------------------------------ABOUT---------------------------------- */
 
 .about {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: var(--padding-94);
+    padding-bottom: var(--padding-94);
 }
 
 .hidden-about-title {
@@ -195,8 +181,6 @@ button {
 .about-list-margin:not(:last-child) {
     margin-right: 30px;
 }
-
-
 
 .about-list-title {
     font-weight: 700;
@@ -216,7 +200,7 @@ button {
 /* -------------------------------------ABOUT-MORE------------------------------ */
 
 .about-more {
-    padding-bottom: 94px;
+    padding-bottom: var(--padding-94);
 }
 .united-title {
     font-weight: 700;
@@ -232,21 +216,17 @@ button {
     margin-left: -30px;
 }
 
-.ubout-img {
+.about-img {
     flex-basis: calc(100%/3-30px);
-    margin-left: 30px;
+    margin-left: 30px;    
 }
 
 /* ---------------------------------------MASTERS--------------------------------------------- */
 
 .masters {
-    background-color: #F5F4FA;
-    padding-top: 92px;
-    padding-bottom: 94px;
-}
-
-.masters-title {
-    
+    background-color: var(--backgrd-color);
+    padding-top: var(--padding-94);
+    padding-bottom: var(--padding-94);
 }
 
 .masters-container {
@@ -258,13 +238,9 @@ button {
 .masters-photo {
     flex-basis:calc(100%/2-30px);
     margin-left: 30px;  
-    background: #FFFFFF;
+    background: var(--light-color) ;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;  
-}
-
-.masters-photo {
-
 }
 
 .masters-list {
@@ -289,8 +265,8 @@ button {
 /* ----------------------------------------FOOTER---------------------------------------- */
 .footer-section {
     background: #2F303A;
-    padding-top: 58px;
-    padding-bottom: 62px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo-style {
@@ -307,23 +283,26 @@ button {
     opacity: 60%;
 }
 
-.footer-list {
-    margin-top: 20px;
+.footer-logo {
+    margin-bottom: 20px;
 }
 
 .footer-list :not(:last-child) {
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 .contacts-addres {
     color: var(--light-color);
-    opacity: 100%;
-    
+    opacity: 100%;    
 }
 
 
 /* -------------------------------------PORTFOLIO = PF---------------------------------- */
 /* ---------------------------------------PF BUTTONS-------------------------------------*/
+.portfolio-main {
+    padding-top: var(--padding-94);
+    padding-bottom: 64px;
+}
 
 .pf-hidden-title {
     visibility: hidden;
@@ -332,8 +311,16 @@ button {
     margin-bottom: -1px;
 }
 
-.portfolio-btn {
+.pf-btn-list {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.pf-btn-item:not(:last-child) {
+    margin-right: 8px;
+}
 
+.portfolio-btn {
     background: var(--backgrd-color);
     border-radius: 4px;
     font-weight: 500;
@@ -342,15 +329,41 @@ button {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color);
-    cursor: pointer;
+    border: 0px;
+    padding: 6px 22px;
 }
 
+
 /* -------------------------------------------WORKS------------------------------------------- */
+
+.pf-works-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+}
+
+.pf-item-box {
+    flex-basis: calc(100%/3-30px);
+    margin-left: 30px; 
+    margin-bottom: 30px;
+}
+
+.pf-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-top: 0px;
+    box-sizing: border-box;
+}
+
 .pf-works-name {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 
 .pf-works-kind {
@@ -363,5 +376,4 @@ button {
 button.current {
     background-color : var(--brend-color);
     color: var(--light-color);
-
 }
